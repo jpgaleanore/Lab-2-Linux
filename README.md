@@ -19,6 +19,44 @@ la terminal Linux.
 
 ------------------------------------------------------------------------
 
+## 2. Script de Ejecución Automática
+
+Este repositorio incluye el archivo **`run_linux_lab_commands.bash`** que ejecuta automáticamente todos los comandos descritos en esta guía.
+
+### Cómo usar el script:
+
+```bash
+# Dar permisos de ejecución
+chmod +x run_linux_lab_commands.bash
+
+# Ejecutar el script
+./run_linux_lab_commands.bash
+```
+
+El script:
+- ✅ Ejecuta todos los comandos de los laboratorios 2 y 3 de forma secuencial
+- 📝 Genera un archivo de log con los resultados: `linux_lab_commands.log`
+- 🔍 Omite automáticamente comandos que no están disponibles en el sistema
+- 🛡️ Trabaja en un directorio temporal para evitar modificaciones no deseadas
+- 🧹 Limpia automáticamente los archivos temporales al finalizar
+
+### Ver los resultados:
+
+```bash
+# Ver el log completo
+cat linux_lab_commands.log
+
+# Ver solo los comandos ejecutados
+grep ">>>" linux_lab_commands.log
+
+# Ver comandos que fallaron
+grep "!!" linux_lab_commands.log
+```
+
+**Nota:** Este script es ideal para practicar y ver ejemplos reales de salida de cada comando sin tener que ejecutarlos manualmente uno por uno.
+
+------------------------------------------------------------------------
+
 # 🧭 LABORATORIO 2 -- Obtención de ayuda
 
 ## `date`
