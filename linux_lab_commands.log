@@ -1,0 +1,510 @@
+Working directory: /var/folders/80/g9s_m65s331ckmlwygy0hkph0000gn/T/tmp.CTbkJWetTg
+>>> date
+Sun Mar  1 16:19:04 -05 2026
+
+>>> MANPAGER=cat man date | head -n 40
+Unknown locale, assuming C
+DATE(1)                     General Commands Manual                    DATE(1)
+
+NNAAMMEE
+     ddaattee – display or set date and time
+
+SSYYNNOOPPSSIISS
+     ddaattee [--nnRRuu] [--zz _o_u_t_p_u_t___z_o_n_e] [--II[_F_M_T]] [--rr _f_i_l_e_n_a_m_e] [--rr _s_e_c_o_n_d_s]
+          [--vv[++|--]_v_a_l[yy|mm|ww|dd|HH|MM|SS]] [++_o_u_t_p_u_t___f_m_t]
+     ddaattee [--jjnnRRuu] [--zz _o_u_t_p_u_t___z_o_n_e] [--II[_F_M_T]] [--vv[++|--]_v_a_l[yy|mm|ww|dd|HH|MM|SS]]
+          [[[_m_m]_d_d]_H_H]_M_M[[_c_c]_y_y][.._S_S] [++_o_u_t_p_u_t___f_m_t]
+     ddaattee [--jjnnRRuu] [--zz _o_u_t_p_u_t___z_o_n_e] [--II[_F_M_T]] [--vv[++|--]_v_a_l[yy|mm|ww|dd|HH|MM|SS]]
+          --ff _i_n_p_u_t___f_m_t _n_e_w___d_a_t_e [++_o_u_t_p_u_t___f_m_t]
+
+DDEESSCCRRIIPPTTIIOONN
+     When invoked without arguments, the ddaattee utility displays the current
+     date and time.  Otherwise, depending on the options specified, ddaattee will
+     set the date and time or print it in a user-defined way.
+
+     The ddaattee utility displays the date and time read from the kernel clock.
+     When used to set the date and time, both the kernel clock and the
+     hardware clock are updated.
+
+     Only the superuser may set the date, and if the system securelevel (see
+     securelevel(7)) is greater than 1, the time may not be changed by more
+     than 1 second.
+
+     The options are as follows:
+
+     --ff _i_n_p_u_t___f_m_t
+             Use _i_n_p_u_t___f_m_t as the format string to parse the _n_e_w___d_a_t_e provided
+             rather than using the default [[[_m_m]_d_d]_H_H]_M_M[[_c_c]_y_y][_._S_S] format.
+             Parsing is done using strptime(3).
+
+     --II[_F_M_T]
+             Use ISO 8601 output format.  _F_M_T may be omitted, in which case
+             the default is ddaattee.  Valid _F_M_T values are ddaattee, hhoouurrss, mmiinnuutteess,
+             sseeccoonnddss, and nnss (for nanoseconds).  The date and time is
+             formatted to the specified precision.  When _F_M_T is hhoouurrss (or the
+             more precise mmiinnuutteess, sseeccoonnddss, or nnss), the ISO 8601 format
+             includes the timezone.
+!! command failed (141)
+
+>>> man -k password | head -n 20
+git-credential-cache(1)  - Helper to temporarily store passwords in memory
+gitcredentials(7)        - Providing usernames and passwords to Git
+CMS_decrypt(3ssl), CMS_decrypt_set1_pkey_and_peer(3ssl), CMS_decrypt_set1_pkey(3ssl), CMS_decrypt_set1_password(3ssl) - decrypt content from a CMS envelopedData structure
+EVP_BytesToKey(3ssl)     - password based encryption routine
+EVP_PBE_CipherInit(3ssl), EVP_PBE_CipherInit_ex(3ssl), EVP_PBE_find(3ssl), EVP_PBE_find_ex(3ssl), EVP_PBE_alg_add_type(3ssl), EVP_PBE_alg_add(3ssl) - Password based encryption routines
+OSSL_CRMF_pbm_new(3ssl), OSSL_CRMF_pbmp_new(3ssl) - functions for producing Password-Based MAC (PBM)
+OSSL_DECODER_CTX_new_for_pkey(3ssl), OSSL_DECODER_CTX_set_passphrase(3ssl), OSSL_DECODER_CTX_set_pem_password_cb(3ssl), OSSL_DECODER_CTX_set_passphrase_ui(3ssl), OSSL_DECODER_CTX_set_passphrase_cb(3ssl) - Decoder routines to decode EVP_PKEYs
+OSSL_ENCODER_CTX_new_for_pkey(3ssl), OSSL_ENCODER_CTX_set_cipher(3ssl), OSSL_ENCODER_CTX_set_passphrase(3ssl), OSSL_ENCODER_CTX_set_pem_password_cb(3ssl), OSSL_ENCODER_CTX_set_passphrase_cb(3ssl), OSSL_ENCODER_CTX_set_passphrase_ui(3ssl) - Encoder routines to encode EVP_PKEYs
+PKCS12_PBE_keyivgen(3ssl), PKCS12_PBE_keyivgen_ex(3ssl), PKCS12_pbe_crypt(3ssl), PKCS12_pbe_crypt_ex(3ssl) - PKCS#12 Password based encryption
+PKCS12_key_gen_asc(3ssl), PKCS12_key_gen_asc_ex(3ssl), PKCS12_key_gen_uni(3ssl), PKCS12_key_gen_uni_ex(3ssl), PKCS12_key_gen_utf8(3ssl), PKCS12_key_gen_utf8_ex(3ssl) - PKCS#12 Password based key derivation
+PKCS12_newpass(3ssl)     - change the password of a PKCS12 structure
+PKCS5_PBE_keyivgen(3ssl), PKCS5_PBE_keyivgen_ex(3ssl), PKCS5_pbe2_set(3ssl), PKCS5_pbe2_set_iv(3ssl), PKCS5_pbe2_set_iv_ex(3ssl), PKCS5_pbe_set(3ssl), PKCS5_pbe_set_ex(3ssl), PKCS5_pbe2_set_scrypt(3ssl), PKCS5_pbe_set0_algor(3ssl), PKCS5_pbe_set0_algor_ex(3ssl), PKCS5_v2_PBE_keyivgen(3ssl), PKCS5_v2_PBE_keyivgen_ex(3ssl), PKCS5_v2_scrypt_keyivgen(3ssl), PKCS5_v2_scrypt_keyivgen_ex(3ssl), PKCS5_pbkdf2_set(3ssl), PKCS5_pbkdf2_set_ex(3ssl), EVP_PBE_scrypt(3ssl), EVP_PBE_scrypt_ex(3ssl) - PKCS#5 Password based encryption routines
+PKCS5_PBKDF2_HMAC(3ssl), PKCS5_PBKDF2_HMAC_SHA1(3ssl) - password based derivation routines with salt and iteration count
+SSL_CTX_set_srp_username(3ssl), SSL_CTX_set_srp_password(3ssl), SSL_CTX_set_srp_strength(3ssl), SSL_CTX_set_srp_cb_arg(3ssl), SSL_CTX_set_srp_username_callback(3ssl), SSL_CTX_set_srp_client_pwd_callback(3ssl), SSL_CTX_set_srp_verify_param_callback(3ssl), SSL_set_srp_server_param(3ssl), SSL_set_srp_server_param_pw(3ssl), SSL_get_srp_g(3ssl), SSL_get_srp_N(3ssl), SSL_get_srp_username(3ssl), SSL_get_srp_userinfo(3ssl) - SRP control operations
+git-credential-cache(1)  - Helper to temporarily store passwords in memory
+gitcredentials(7)        - Providing usernames and passwords to Git
+openssl-passwd(1ssl)     - compute password hashes
+openssl-srp(1ssl)        - maintain SRP password file
+pem_password_cb(3ssl), PEM_read_bio_PrivateKey_ex(3ssl), PEM_read_bio_PrivateKey(3ssl), PEM_read_PrivateKey_ex(3ssl), PEM_read_PrivateKey(3ssl), PEM_write_bio_PrivateKey_ex(3ssl), PEM_write_bio_PrivateKey(3ssl), PEM_write_bio_PrivateKey_traditional(3ssl), PEM_write_PrivateKey_ex(3ssl), PEM_write_PrivateKey(3ssl), PEM_write_bio_PKCS8PrivateKey(3ssl), PEM_write_PKCS8PrivateKey(3ssl), PEM_write_bio_PKCS8PrivateKey_nid(3ssl), PEM_write_PKCS8PrivateKey_nid(3ssl), PEM_read_bio_PUBKEY_ex(3ssl), PEM_read_bio_PUBKEY(3ssl), PEM_read_PUBKEY_ex(3ssl), PEM_read_PUBKEY(3ssl), PEM_write_bio_PUBKEY_ex(3ssl), PEM_write_bio_PUBKEY(3ssl), PEM_write_PUBKEY_ex(3ssl), PEM_write_PUBKEY(3ssl), PEM_read_bio_RSAPrivateKey(3ssl), PEM_read_RSAPrivateKey(3ssl), PEM_write_bio_RSAPrivateKey(3ssl), PEM_write_RSAPrivateKey(3ssl), PEM_read_bio_RSAPublicKey(3ssl), PEM_read_RSAPublicKey(3ssl), PEM_write_bio_RSAPublicKey(3ssl), PEM_write_RSAPublicKey(3ssl), PEM_read_bio_RSA_PUBKEY(3ssl), PEM_read_RSA_PUBKEY(3ssl), PEM_write_bio_RSA_PUBKEY(3ssl), PEM_write_RSA_PUBKEY(3ssl), PEM_read_bio_DSAPrivateKey(3ssl), PEM_read_DSAPrivateKey(3ssl), PEM_write_bio_DSAPrivateKey(3ssl), PEM_write_DSAPrivateKey(3ssl), PEM_read_bio_DSA_PUBKEY(3ssl), PEM_read_DSA_PUBKEY(3ssl), PEM_write_bio_DSA_PUBKEY(3ssl), PEM_write_DSA_PUBKEY(3ssl), PEM_read_bio_Parameters_ex(3ssl), PEM_read_bio_Parameters(3ssl), PEM_write_bio_Parameters(3ssl), PEM_read_bio_DSAparams(3ssl), PEM_read_DSAparams(3ssl), PEM_write_bio_DSAparams(3ssl), PEM_write_DSAparams(3ssl), PEM_read_bio_DHparams(3ssl), PEM_read_DHparams(3ssl), PEM_write_bio_DHparams(3ssl), PEM_write_DHparams(3ssl), PEM_read_bio_X509(3ssl), PEM_read_X509(3ssl), PEM_write_bio_X509(3ssl), PEM_write_X509(3ssl), PEM_read_bio_X509_ACERT(3ssl), PEM_read_X509_ACERT(3ssl), PEM_write_bio_X509_ACERT(3ssl), PEM_write_X509_ACERT(3ssl), PEM_read_bio_X509_AUX(3ssl), PEM_read_X509_AUX(3ssl), PEM_write_bio_X509_AUX(3ssl), PEM_write_X509_AUX(3ssl), PEM_read_bio_X509_REQ(3ssl), PEM_read_X509_REQ(3ssl), PEM_write_bio_X509_REQ(3ssl), PEM_write_X509_REQ(3ssl), PEM_write_bio_X509_REQ_NEW(3ssl), PEM_write_X509_REQ_NEW(3ssl), PEM_read_bio_X509_CRL(3ssl), PEM_read_X509_CRL(3ssl), PEM_write_bio_X509_CRL(3ssl), PEM_write_X509_CRL(3ssl), PEM_read_bio_PKCS7(3ssl), PEM_read_PKCS7(3ssl), PEM_write_bio_PKCS7(3ssl), PEM_write_PKCS7(3ssl) - PEM routines
+PasswordBreachAgent(8)   - Leaked Password Warning Agent
+
+>>> man -f date
+cal(1), ncal(1)          - displays a calendar and the date of Easter
+date(1)                  - display or set date and time
+iwidgets_datefield(n), iwidgets::datefield(n) - Create and manipulate a date field widget
+APR::Date(3pm)           - Perl API for APR date manipulating functions
+DBIx::Class::InflateColumn::DateTime(3pm) - Auto-create DateTime objects from date and datetime columns
+Date::Calc(3pm)          - Gregorian calendar date calculations
+Date::Calc::Object(3pm)  - Object-oriented add-on for Date::Calc with overloaded operators
+Date::Calc::PP(3pm)      - pure-Perl plug-in for Date::Calc
+Date::Calendar(3pm)      - Calendar objects for different holiday schemes
+Date::Calendar::Profiles(3pm) - Some sample profiles for Date::Calendar and Date::Calendar::Year
+Date::Calendar::Year(3pm) - Implements embedded "year" objects for Date::Calendar
+Date::Format(3pm)        - Date formating subroutines
+Date::Language(3pm)      - Language specific date formating and parsing
+Date::Language::Bulgarian(3pm) - localization for Date::Format
+Date::Language::Hungarian(3pm) - Magyar format for Date::Format
+Date::Parse(3pm)         - Parse date strings into time values
+DateTime(3pm)            - A date and time object for Perl
+DateTime::Duration(3pm)  - Duration objects for date math
+HTTP::Date(3pm)          - HTTP::Date - date conversion routines
+Mail::Field::Date(3pm)   - a date header field
+Tcl_GetTime(3tcl), Tcl_SetTimeProc(3tcl), Tcl_QueryTimeProc(3tcl) - get date and time
+Time::Seconds(3pm)       - a simple API to convert seconds to other date values
+asctime(3), asctime_r(3), ctime(3), ctime_r(3), difftime(3), gmtime(3), gmtime_r(3), localtime(3), localtime_r(3), mktime(3), timegm(3), timelocal(3) - transform binary date and time values
+cal(1), ncal(1)          - displays a calendar and the date of Easter
+clock_gettime(3), clock_settime(3), clock_getres(3), clock_gettime_nsec_np(3) - get/set date and time
+curl_getdate(3)          - Convert a date string to number of seconds
+date(1)                  - display or set date and time
+ftime(3)                 - get date and time
+getdate(3)               - convert user format date and time
+gettimeofday(2), settimeofday(2) - get/set date and time
+iwidgets_datefield(n), iwidgets::datefield(n) - Create and manipulate a date field widget
+strftime(3), strftime_l(3) - format date and time
+strptime(3), strptime_l(3) - parse date and time string
+wcsftime(3), wcsftime_l(3) - convert date and time to a wide-character string
+
+>>> apropos password | head -n 20
+git-credential-cache(1)  - Helper to temporarily store passwords in memory
+gitcredentials(7)        - Providing usernames and passwords to Git
+CMS_decrypt(3ssl), CMS_decrypt_set1_pkey_and_peer(3ssl), CMS_decrypt_set1_pkey(3ssl), CMS_decrypt_set1_password(3ssl) - decrypt content from a CMS envelopedData structure
+EVP_BytesToKey(3ssl)     - password based encryption routine
+EVP_PBE_CipherInit(3ssl), EVP_PBE_CipherInit_ex(3ssl), EVP_PBE_find(3ssl), EVP_PBE_find_ex(3ssl), EVP_PBE_alg_add_type(3ssl), EVP_PBE_alg_add(3ssl) - Password based encryption routines
+OSSL_CRMF_pbm_new(3ssl), OSSL_CRMF_pbmp_new(3ssl) - functions for producing Password-Based MAC (PBM)
+OSSL_DECODER_CTX_new_for_pkey(3ssl), OSSL_DECODER_CTX_set_passphrase(3ssl), OSSL_DECODER_CTX_set_pem_password_cb(3ssl), OSSL_DECODER_CTX_set_passphrase_ui(3ssl), OSSL_DECODER_CTX_set_passphrase_cb(3ssl) - Decoder routines to decode EVP_PKEYs
+OSSL_ENCODER_CTX_new_for_pkey(3ssl), OSSL_ENCODER_CTX_set_cipher(3ssl), OSSL_ENCODER_CTX_set_passphrase(3ssl), OSSL_ENCODER_CTX_set_pem_password_cb(3ssl), OSSL_ENCODER_CTX_set_passphrase_cb(3ssl), OSSL_ENCODER_CTX_set_passphrase_ui(3ssl) - Encoder routines to encode EVP_PKEYs
+PKCS12_PBE_keyivgen(3ssl), PKCS12_PBE_keyivgen_ex(3ssl), PKCS12_pbe_crypt(3ssl), PKCS12_pbe_crypt_ex(3ssl) - PKCS#12 Password based encryption
+PKCS12_key_gen_asc(3ssl), PKCS12_key_gen_asc_ex(3ssl), PKCS12_key_gen_uni(3ssl), PKCS12_key_gen_uni_ex(3ssl), PKCS12_key_gen_utf8(3ssl), PKCS12_key_gen_utf8_ex(3ssl) - PKCS#12 Password based key derivation
+PKCS12_newpass(3ssl)     - change the password of a PKCS12 structure
+PKCS5_PBE_keyivgen(3ssl), PKCS5_PBE_keyivgen_ex(3ssl), PKCS5_pbe2_set(3ssl), PKCS5_pbe2_set_iv(3ssl), PKCS5_pbe2_set_iv_ex(3ssl), PKCS5_pbe_set(3ssl), PKCS5_pbe_set_ex(3ssl), PKCS5_pbe2_set_scrypt(3ssl), PKCS5_pbe_set0_algor(3ssl), PKCS5_pbe_set0_algor_ex(3ssl), PKCS5_v2_PBE_keyivgen(3ssl), PKCS5_v2_PBE_keyivgen_ex(3ssl), PKCS5_v2_scrypt_keyivgen(3ssl), PKCS5_v2_scrypt_keyivgen_ex(3ssl), PKCS5_pbkdf2_set(3ssl), PKCS5_pbkdf2_set_ex(3ssl), EVP_PBE_scrypt(3ssl), EVP_PBE_scrypt_ex(3ssl) - PKCS#5 Password based encryption routines
+PKCS5_PBKDF2_HMAC(3ssl), PKCS5_PBKDF2_HMAC_SHA1(3ssl) - password based derivation routines with salt and iteration count
+SSL_CTX_set_srp_username(3ssl), SSL_CTX_set_srp_password(3ssl), SSL_CTX_set_srp_strength(3ssl), SSL_CTX_set_srp_cb_arg(3ssl), SSL_CTX_set_srp_username_callback(3ssl), SSL_CTX_set_srp_client_pwd_callback(3ssl), SSL_CTX_set_srp_verify_param_callback(3ssl), SSL_set_srp_server_param(3ssl), SSL_set_srp_server_param_pw(3ssl), SSL_get_srp_g(3ssl), SSL_get_srp_N(3ssl), SSL_get_srp_username(3ssl), SSL_get_srp_userinfo(3ssl) - SRP control operations
+git-credential-cache(1)  - Helper to temporarily store passwords in memory
+gitcredentials(7)        - Providing usernames and passwords to Git
+openssl-passwd(1ssl)     - compute password hashes
+openssl-srp(1ssl)        - maintain SRP password file
+pem_password_cb(3ssl), PEM_read_bio_PrivateKey_ex(3ssl), PEM_read_bio_PrivateKey(3ssl), PEM_read_PrivateKey_ex(3ssl), PEM_read_PrivateKey(3ssl), PEM_write_bio_PrivateKey_ex(3ssl), PEM_write_bio_PrivateKey(3ssl), PEM_write_bio_PrivateKey_traditional(3ssl), PEM_write_PrivateKey_ex(3ssl), PEM_write_PrivateKey(3ssl), PEM_write_bio_PKCS8PrivateKey(3ssl), PEM_write_PKCS8PrivateKey(3ssl), PEM_write_bio_PKCS8PrivateKey_nid(3ssl), PEM_write_PKCS8PrivateKey_nid(3ssl), PEM_read_bio_PUBKEY_ex(3ssl), PEM_read_bio_PUBKEY(3ssl), PEM_read_PUBKEY_ex(3ssl), PEM_read_PUBKEY(3ssl), PEM_write_bio_PUBKEY_ex(3ssl), PEM_write_bio_PUBKEY(3ssl), PEM_write_PUBKEY_ex(3ssl), PEM_write_PUBKEY(3ssl), PEM_read_bio_RSAPrivateKey(3ssl), PEM_read_RSAPrivateKey(3ssl), PEM_write_bio_RSAPrivateKey(3ssl), PEM_write_RSAPrivateKey(3ssl), PEM_read_bio_RSAPublicKey(3ssl), PEM_read_RSAPublicKey(3ssl), PEM_write_bio_RSAPublicKey(3ssl), PEM_write_RSAPublicKey(3ssl), PEM_read_bio_RSA_PUBKEY(3ssl), PEM_read_RSA_PUBKEY(3ssl), PEM_write_bio_RSA_PUBKEY(3ssl), PEM_write_RSA_PUBKEY(3ssl), PEM_read_bio_DSAPrivateKey(3ssl), PEM_read_DSAPrivateKey(3ssl), PEM_write_bio_DSAPrivateKey(3ssl), PEM_write_DSAPrivateKey(3ssl), PEM_read_bio_DSA_PUBKEY(3ssl), PEM_read_DSA_PUBKEY(3ssl), PEM_write_bio_DSA_PUBKEY(3ssl), PEM_write_DSA_PUBKEY(3ssl), PEM_read_bio_Parameters_ex(3ssl), PEM_read_bio_Parameters(3ssl), PEM_write_bio_Parameters(3ssl), PEM_read_bio_DSAparams(3ssl), PEM_read_DSAparams(3ssl), PEM_write_bio_DSAparams(3ssl), PEM_write_DSAparams(3ssl), PEM_read_bio_DHparams(3ssl), PEM_read_DHparams(3ssl), PEM_write_bio_DHparams(3ssl), PEM_write_DHparams(3ssl), PEM_read_bio_X509(3ssl), PEM_read_X509(3ssl), PEM_write_bio_X509(3ssl), PEM_write_X509(3ssl), PEM_read_bio_X509_ACERT(3ssl), PEM_read_X509_ACERT(3ssl), PEM_write_bio_X509_ACERT(3ssl), PEM_write_X509_ACERT(3ssl), PEM_read_bio_X509_AUX(3ssl), PEM_read_X509_AUX(3ssl), PEM_write_bio_X509_AUX(3ssl), PEM_write_X509_AUX(3ssl), PEM_read_bio_X509_REQ(3ssl), PEM_read_X509_REQ(3ssl), PEM_write_bio_X509_REQ(3ssl), PEM_write_X509_REQ(3ssl), PEM_write_bio_X509_REQ_NEW(3ssl), PEM_write_X509_REQ_NEW(3ssl), PEM_read_bio_X509_CRL(3ssl), PEM_read_X509_CRL(3ssl), PEM_write_bio_X509_CRL(3ssl), PEM_write_X509_CRL(3ssl), PEM_read_bio_PKCS7(3ssl), PEM_read_PKCS7(3ssl), PEM_write_bio_PKCS7(3ssl), PEM_write_PKCS7(3ssl) - PEM routines
+PasswordBreachAgent(8)   - Leaked Password Warning Agent
+
+>>> whatis passwd
+SSL_CTX_set_default_passwd_cb(3ssl), SSL_CTX_set_default_passwd_cb_userdata(3ssl), SSL_CTX_get_default_passwd_cb(3ssl), SSL_CTX_get_default_passwd_cb_userdata(3ssl), SSL_set_default_passwd_cb(3ssl), SSL_set_default_passwd_cb_userdata(3ssl), SSL_get_default_passwd_cb(3ssl), SSL_get_default_passwd_cb_userdata(3ssl) - set or get passwd callback for encrypted PEM file handling
+asn1parse(1ssl), ca(1ssl), ciphers(1ssl), cmp(1ssl), cms(1ssl), crl(1ssl), crl2pkcs7(1ssl), dgst(1ssl), dhparam(1ssl), dsa(1ssl), dsaparam(1ssl), ec(1ssl), ecparam(1ssl), enc(1ssl), engine(1ssl), errstr(1ssl), gendsa(1ssl), genpkey(1ssl), genrsa(1ssl), info(1ssl), kdf(1ssl), mac(1ssl), nseq(1ssl), ocsp(1ssl), passwd(1ssl), pkcs12(1ssl), pkcs7(1ssl), pkcs8(1ssl), pkey(1ssl), pkeyparam(1ssl), pkeyutl(1ssl), prime(1ssl), rand(1ssl), rehash(1ssl), req(1ssl), rsa(1ssl), rsautl(1ssl), s_client(1ssl), s_server(1ssl), s_time(1ssl), sess_id(1ssl), smime(1ssl), speed(1ssl), spkac(1ssl), srp(1ssl), storeutl(1ssl), ts(1ssl), verify(1ssl), version(1ssl), x509(1ssl) - OpenSSL application commands
+openssl-passwd(1ssl)     - compute password hashes
+passwd(1)                - modify a user's password
+passwd(5), master.passwd(5) - format of the password file
+slapd-passwd(5)          - /etc/passwd backend to slapd
+passwd(1)                - modify a user's password
+passwd(5), master.passwd(5) - format of the password file
+slapd-passwd(5)          - /etc/passwd backend to slapd
+
+>>> info date | head -n 40
+!! skipping (missing command: info)
+
+>>> date --help | head -n 40
+date: illegal option -- -
+usage: date [-jnRu] [-I[date|hours|minutes|seconds|ns]] [-f input_fmt]
+            [ -z output_zone ] [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+!! command failed (1)
+
+>>> ls /usr/share/doc
+bash
+cups
+postfix
+
+>>> locate crontab
+
+WARNING: The locate database (/var/db/locate.database) does not exist.
+To create the database, run the following command:
+
+  sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+
+Please be aware that the database can take some time to generate; once
+the database has been created, this message will no longer appear.
+
+!! command failed (1)
+
+>>> locate -b "\crontab"
+locate: illegal option -- b
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+!! command failed (1)
+
+>>> whereis passwd
+passwd: /usr/bin/passwd /usr/local/share/man/man1/passwd.1ssl
+
+>>> pwd
+/var/folders/80/g9s_m65s331ckmlwygy0hkph0000gn/T/tmp.CTbkJWetTg
+
+>>> echo $HOME
+/Users/jp
+
+>>> echo ~
+/Users/jp
+
+>>> cd /
+
+>>> pwd
+/
+
+>>> cd
+
+>>> pwd
+/Users/jp
+
+>>> cd ~
+
+>>> pwd
+/Users/jp
+
+>>> cd ..
+
+>>> pwd
+/Users
+
+>>> cd /usr/bin
+
+>>> pwd
+/usr/bin
+
+>>> cd "/var/folders/80/g9s_m65s331ckmlwygy0hkph0000gn/T/tmp.CTbkJWetTg"
+
+>>> ls
+
+>>> ls -a
+.
+..
+
+>>> ls -l
+total 0
+
+>>> ls -la ~
+total 6732944
+drwxr-x---+  69 jp    staff        2208 Mar  1 16:19 .
+drwxr-xr-x    5 root  admin         160 Sep 23 20:39 ..
+-r--------    1 jp    staff           7 Oct 18 00:19 .CFUserTextEncoding
+-rw-r--r--@   1 jp    staff       14340 Mar  1 16:09 .DS_Store
+drwxr-xr-x@  14 jp    staff         448 Feb 10 13:58 .IdentityService
+drwx------@  11 jp    staff         352 Feb 27 12:52 .ServiceHub
+drwx------+   2 jp    staff          64 Feb 28 00:06 .Trash
+drwxr-xr-x@   4 jp    staff         128 Feb 23 21:04 .agents
+drwxr-xr-x@  32 jp    staff        1024 Feb 27 15:40 .aitk
+-rw-r--r--    1 jp    staff         617 Sep 23 21:18 .anyconnect
+drwxr-xr-x@   3 jp    staff          96 Dec 30 10:31 .aspnet
+drwxr-xr-x    4 jp    staff         128 Oct  5 00:10 .aws
+drwxr-xr-x   17 jp    staff         544 Feb 27 23:14 .azure
+drwxr-xr-x@   5 jp    staff         160 Oct  2 14:31 .cache
+drwxr-xr-x    3 jp    staff          96 Sep 23 21:16 .cisco
+drwxr-xr-x    5 jp    staff         160 Oct  1 09:40 .claude
+-rw-------    1 jp    staff       28296 Oct  1 09:42 .claude.json
+-rw-------    1 jp    staff       28258 Oct  1 09:42 .claude.json.backup
+drwxr-xr-x@   4 jp    staff         128 Oct 19 19:02 .config
+drwxr-xr-x@   4 jp    staff         128 Feb 23 18:01 .copilot
+drwxr-xr-x@  13 jp    staff         416 Feb 22 13:53 .docker
+drwxr-xr-x@  28 jp    staff         896 Feb  5 15:22 .dotnet
+drwxr-xr-x@   4 jp    staff         128 Sep 25 18:49 .embedmongo
+-rw-r--r--    1 jp    staff         298 Oct 23 10:51 .gitconfig
+drwx------   33 jp    staff        1056 Feb 28 00:12 .gnupg
+drwx------    5 jp    staff         160 Sep 23 22:39 .gnupg_pre_2.1
+drwxr-xr-x@   7 jp    staff         224 Nov  1 23:39 .gradle
+drwxr-xr-x@   3 jp    staff          96 Sep 24 22:21 .junie
+drwxr-xr-x@   2 jp    staff          64 Feb 28 00:12 .k8slens
+-rw-r--r--@   1 jp    staff    15269182 Feb 21 20:14 .kadeck_log
+drwxr-xr-x    4 jp    staff         128 Feb  2 22:39 .kube
+-rw-------@   1 jp    staff          20 Mar  1 15:38 .lesshst
+drwxr-xr-x@   3 jp    staff          96 Dec 30 10:31 .local
+drwxr-xr-x@   5 jp    staff         160 Nov  1 23:42 .m2
+drwx------@   3 jp    staff          96 Oct 16 18:01 .mongodb
+drwx------@   3 jp    staff          96 Feb  5 15:21 .net
+drwxr-xr-x    7 jp    staff         224 Oct 15 10:34 .npm
+-rw-------    1 jp    staff         123 Oct  2 13:04 .npmrc
+drwxr-xr-x@   4 jp    staff         128 Dec 30 10:35 .nuget
+drwxr-xr-x@   6 jp    staff         192 Sep 24 18:28 .offsetexplorer3
+drwxr-xr-x@   3 jp    staff          96 Jan 30 22:33 .redhat
+drwxr-xr-x@   8 jp    staff         256 Oct 24 14:25 .redis-insight
+drwxr-xr-x@   5 jp    staff         160 Feb 22 20:25 .sonarlint
+drwxr-xr-x    5 jp    staff         160 Oct  4 19:26 .ssh
+drwxr-xr-x    3 jp    staff          96 Nov 10 16:16 .terraform.d
+-rw-------@   1 jp    staff       11990 Oct 23 10:47 .viminfo
+drwxr-xr-x    3 jp    staff          96 Jan 20 09:16 .vpn
+drwxr-xr-x@   5 jp    staff         160 Sep 24 10:37 .vscode
+-rw-r--r--    1 jp    staff          40 Sep 23 21:25 .zprofile
+-rw-------@   1 jp    staff       27201 Mar  1 16:18 .zsh_history
+drwx------   11 jp    staff         352 Feb 28 00:05 .zsh_sessions
+-rw-r--r--    1 jp    staff          82 Sep 24 21:47 .zshrc
+-rw-------    1 jp    staff          83 Sep 24 21:45 .zshrc.save
+drwx------@   4 jp    staff         128 Sep 23 20:50 Applications
+drwxr-xr-x@   3 jp    staff          96 Sep 23 22:57 DataGripProjects
+drwx------@  10 jp    staff         320 Feb 27 14:24 Desktop
+drwx------@  30 jp    staff         960 Feb 20 14:06 Documents
+drwx------@ 116 jp    staff        3712 Mar  1 16:09 Downloads
+drwxr-xr-x@   2 jp    staff          64 Feb 17 16:43 IdeaSnapshots
+drwx------@  93 jp    staff        2976 Jan  4 15:28 Library
+drwx------    4 jp    staff         128 Sep 24 09:12 Movies
+drwx------+   4 jp    staff         128 Sep 24 09:13 Music
+drwx------+   6 jp    staff         192 Feb  4 13:39 Pictures
+drwxr-xr-x@   3 jp    staff          96 Oct  1 11:28 Postman
+drwxr-xr-x+   4 jp    staff         128 Sep 23 20:39 Public
+drwxr-xr-x    3 jp    staff          96 Sep 24 11:23 containers
+-rw-r--r--    1 jp    staff        1258 Sep 24 12:22 cosmos_emulator_cert.pem
+-rw-------@   1 jp    staff  3431838435 Oct  8 16:55 java_error_in_idea.hprof
+-rw-r--r--@   1 jp    staff        1860 Oct 23 09:50 observations.json
+
+>>> ls -d /etc/s*
+/etc/security
+/etc/services
+/etc/shells
+/etc/snmp
+/etc/ssh
+/etc/ssl
+/etc/sudo_lecture
+/etc/sudoers
+/etc/sudoers.d
+/etc/syslog.conf
+
+>>> ls -d /etc/????
+/etc/cups
+/etc/snmp
+/etc/ttys
+/etc/uucp
+/etc/xtab
+
+>>> ls -d /etc/[abcd]*
+/etc/afpovertcp.cfg
+/etc/aliases
+/etc/aliases.db
+/etc/apache2
+/etc/asl
+/etc/asl.conf
+/etc/auto_home
+/etc/auto_master
+/etc/autofs.conf
+/etc/bashrc
+/etc/bashrc_Apple_Terminal
+/etc/com.apple.screensharing.agent.launchd
+/etc/csh.cshrc
+/etc/csh.login
+/etc/csh.logout
+/etc/cups
+/etc/dotnet
+
+>>> cp /etc/hosts hosts
+
+>>> cp -v /etc/hosts hosts
+/etc/hosts -> hosts
+
+>>> cp -rv /etc/ssh ./ssh_backup
+/etc/ssh -> ./ssh_backup
+/etc/ssh/crypto -> ./ssh_backup/crypto
+/etc/ssh/crypto/apple.conf -> ./ssh_backup/crypto/apple.conf
+/etc/ssh/crypto/fips.conf -> ./ssh_backup/crypto/fips.conf
+/etc/ssh/crypto.conf -> ./ssh_backup/crypto.conf
+/etc/ssh/sshd_config -> ./ssh_backup/sshd_config
+/etc/ssh/ssh_config -> ./ssh_backup/ssh_config
+/etc/ssh/ssh_config.d -> ./ssh_backup/ssh_config.d
+/etc/ssh/ssh_config.d/100-macos.conf -> ./ssh_backup/ssh_config.d/100-macos.conf
+/etc/ssh/moduli -> ./ssh_backup/moduli
+/etc/ssh/sshd_config.d -> ./ssh_backup/sshd_config.d
+/etc/ssh/sshd_config.d/100-macos.conf -> ./ssh_backup/sshd_config.d/100-macos.conf
+
+>>> mv hosts hosts_backup
+
+>>> mv hosts_backup /tmp/
+
+>>> cp /etc/hosts hosts
+
+>>> rm hosts
+
+>>> echo temp > archivo.txt
+
+>>> printf 'y\n' | rm -i archivo.txt
+remove archivo.txt? 
+>>> mkdir directorio
+
+>>> rm -r directorio/
+
+>>> mkdir proyectos
+
+>>> mkdir -p proyectos/java/src
+
+>>> ls -R proyectos
+java
+
+proyectos/java:
+src
+
+proyectos/java/src:
+
+>>> touch nuevo_archivo.txt
+
+>>> cat /etc/hosts
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+127.0.0.1 kafka
+127.0.0.1 kafka1
+127.0.0.1 vault
+localhost mariadb
+127.0.0.1 mariadb
+127.0.0.1 redis
+localhost redis
+127.0.0.1 mysql
+127.0.0.1 mongo
+localhost mongo
+172.26.80.10 wn0-pre-pr.jpuq5zp0mwiuzfgklas0xuicha.ax.internal.usgovcloudapp.net
+172.26.80.12 wn1-pre-pr.jpuq5zp0mwiuzfgklas0xuicha.ax.internal.usgovcloudapp.net
+172.26.80.14 wn2-pre-pr.jpuq5zp0mwiuzfgklas0xuicha.ax.internal.usgovcloudapp.net
+172.26.80.11 zk1-pre-pr.jpuq5zp0mwiuzfgklas0xuicha.ax.internal.usgovcloudapp.net
+172.26.80.4 zk2-pre-pr.jpuq5zp0mwiuzfgklas0xuicha.ax.internal.usgovcloudapp.net
+172.26.80.8 zk3-pre-pr.jpuq5zp0mwiuzfgklas0xuicha.ax.internal.usgovcloudapp.net
+# 127.0.0.1 mysql
+#NEW KAFKA AND ZOOKEPER PROD
+172.24.3.197 wn0-prod-h.amm3z5v2245upbdnqtnnuip55h.ax.internal.usgovcloudapp.net
+172.24.3.196 wn1-prod-h.amm3z5v2245upbdnqtnnuip55h.ax.internal.usgovcloudapp.net
+172.24.3.198 wn2-prod-h.amm3z5v2245upbdnqtnnuip55h.ax.internal.usgovcloudapp.net
+172.24.3.200 zk0-prod-h.amm3z5v2245upbdnqtnnuip55h.ax.internal.usgovcloudapp.net
+172.24.3.204 zk1-prod-h.amm3z5v2245upbdnqtnnuip55h.ax.internal.usgovcloudapp.net
+172.24.3.201 zk3-prod-h.amm3z5v2245upbdnqtnnuip55h.ax.internal.usgovcloudapp.net
+#CANONICAL KAFKA AND ZOOKEPER DEV
+172.20.23.4 worker0.preprod-kafka.safefleetcloud.com
+172.20.23.5 worker1.preprod-kafka.safefleetcloud.com
+172.20.23.6 worker2.preprod-kafka.safefleetcloud.com
+172.20.23.7 zookeeper0.preprod-kafka.safefleetcloud.com
+172.20.23.8 zookeeper1.preprod-kafka.safefleetcloud.com
+172.20.23.9 zookeeper2.preprod-kafka.safefleetcloud.com
+# MySQL flex
+172.27.0.4 dev-safefleet-mysql-flex-server.mysql.database.usgovcloudapi.net
+172.27.0.68 test-safefleet-mysql-flex-server.mysql.database.usgovcloudapi.net
+172.27.0.101 perf-safefleet-mysql-flex-server.mysql.database.usgovcloudapi.net
+172.27.0.132 stg-safefleet-mysql-flex-server.mysql.database.usgovcloudapi.net
+172.27.0.164 prod-safefleet-mysql-flex-server.mysql.database.usgovcloudapi.net
+# Cosmos
+172.27.0.26 dev-ddp-notification-sender-cosmos.documents.azure.us
+172.27.0.27 dev-ddp-notification-sender-cosmos-usgovvirginia.documents.azure.us
+172.27.0.28 dev-argus-api-cosmos.documents.azure.us
+172.27.0.29 dev-argus-api-cosmos-usgovvirginia.documents.azure.us
+172.27.0.90 test-argus-api-cosmos.documents.azure.us
+172.27.0.91 test-argus-api-cosmos-usgovvirginia.documents.azure.us
+172.27.0.154 stg-argus-api-cosmos.documents.azure.us
+172.27.0.155 stg-argus-api-cosmos-usgovvirginia.documents.azure.us
+172.27.0.86 test-ddp-notification-sender-cosmos.documents.azure.us
+172.27.0.87 test-ddp-notification-sender-cosmos-usgovvirginia.documents.azure.us
+172.27.0.120 perf-ddp-notification-sender-cosmos.documents.azure.us
+172.27.0.121 perf-ddp-notification-sender-cosmos-usgovvirginia.documents.azure.us
+172.27.0.20 dev-file-manager-cosmos.documents.azure.us
+172.27.0.21 dev-file-manager-cosmos-usgovvirginia.documents.azure.us
+172.27.0.24 dev-safefleet-cosmos.documents.azure.us
+172.27.0.25 dev-safefleet-cosmos-usgovvirginia.documents.azure.us
+172.27.0.88 test-safefleet-cosmos.documents.azure.us
+172.27.0.89 test-safefleet-cosmos-usgovvirginia.documents.azure.us
+172.27.0.84 test-file-manager-cosmos.documents.azure.us
+172.27.0.85 test-file-manager-cosmos-usgovvirginia.documents.azure.us
+172.27.0.122 perf-argus-api-cosmos.documents.azure.us
+172.27.0.123 perf-argus-api-cosmos-usgovvirginia.documents.azure.us
+172.27.0.120 perf-ddp-notification-sender-cosmos.documents.azure.us
+172.27.0.117 perf-file-manager-cosmos-usgovvirginia.documents.azure.us
+172.27.0.116 perf-file-manager-cosmos.documents.azure.us
+172.27.0.118 perf-safefleet-cosmos.documents.azure.us
+172.27.0.119 perf-safefleet-cosmos-usgovvirginia.documents.azure.us
+# Added by Docker Desktop
+192.168.1.7 host.docker.internal
+192.168.1.7 gateway.docker.internal
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
+
+>>> ls -lt
+total 0
+-rw-r--r--@ 1 jp  staff    0 Mar  1 16:19 nuevo_archivo.txt
+drwxr-xr-x@ 3 jp  staff   96 Mar  1 16:19 proyectos
+drwxr-xr-x@ 9 jp  staff  288 Mar  1 16:19 ssh_backup
+
+>>> ls -lt | head -n 10
+total 0
+-rw-r--r--@ 1 jp  staff    0 Mar  1 16:19 nuevo_archivo.txt
+drwxr-xr-x@ 3 jp  staff   96 Mar  1 16:19 proyectos
+drwxr-xr-x@ 9 jp  staff  288 Mar  1 16:19 ssh_backup
+
+>>> find /home -name "*.txt"
+
+>>> df -h
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk1s1s1   1.8Ti    10Gi   1.6Ti     1%    426k  4.3G    0%   /
+devfs            189Ki   189Ki     0Bi   100%     654     0  100%   /dev
+/dev/disk1s2     1.8Ti   4.8Gi   1.6Ti     1%    5.0k   18G    0%   /System/Volumes/Preboot
+/dev/disk1s5     1.8Ti    20Ki   1.6Ti     1%       0   18G    0%   /System/Volumes/VM
+/dev/disk1s6     1.8Ti   3.2Mi   1.6Ti     1%      30   18G    0%   /System/Volumes/Update
+/dev/disk1s4     1.8Ti   164Gi   1.6Ti     9%    1.3M   18G    0%   /System/Volumes/Data
+map auto_home      0Bi     0Bi     0Bi   100%       0     0     -   /System/Volumes/Data/home
+
+>>> free -h
+!! skipping (missing command: free)
+
+Done. Log saved to ./linux_lab_commands.log
